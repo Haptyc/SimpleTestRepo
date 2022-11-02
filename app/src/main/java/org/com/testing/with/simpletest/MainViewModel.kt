@@ -75,8 +75,9 @@ class MainViewModel : ViewModel() {
                 imageURL = "https://cdn4.iconfinder.com/data/icons/bettericons/354/github-512.png"
             ),
         )
+        // Edit current commit reverses using a layout manager
         // reversing here before view layer so viewmodel manipulation does not occur in viewlayer
-        _data.postValue(lstRes.reversed())
+        _data.postValue(lstRes)
     }
 
 }

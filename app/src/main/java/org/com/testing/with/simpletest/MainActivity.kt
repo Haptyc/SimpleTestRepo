@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.mRecyclerView.adapter = adapter
-        binding.mRecyclerView.layoutManager = LinearLayoutManager(this)
+        binding.mRecyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, true)
 
         vm.data.observe(
             this
